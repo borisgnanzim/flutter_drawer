@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:draw/pages/contact.dart';
+import 'package:draw/pages/parametre.dart';
+
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
@@ -73,7 +75,12 @@ class HomePage extends StatelessWidget {
                 MaterialPageRoute(builder: (context) => Contact()));
               },
               ),
-              ListTile(title: Text("Paramètres"), leading: Icon(Icons.settings),),
+              ListTile(title: Text("Paramètres"), leading: Icon(Icons.settings),
+              onTap: (){
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Parametre()));
+              },
+              ),
               Divider(),
               ListTile(title: Text("F.A.Q"), leading: Icon(Icons.question_answer),),
               ListTile(title: Text("Aide"), leading: Icon(Icons.help),)
