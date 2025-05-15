@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:draw/pages/contact.dart';
 import 'package:draw/pages/parametre.dart';
+import 'package:draw/pages/notifications.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -80,6 +81,14 @@ class HomePage extends StatelessWidget {
                 Navigator.push(context,
                     MaterialPageRoute(builder: (context) => Parametre()));
               },
+              ),
+              ListTile(
+                title: Text("Notifications"),
+                leading: Icon(Icons.notifications),
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) =>Notifications()));
+                },
               ),
               Divider(),
               ListTile(title: Text("F.A.Q"), leading: Icon(Icons.question_answer),),
