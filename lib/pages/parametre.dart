@@ -7,7 +7,7 @@ class Parametre extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Paramètre", style: TextStyle(color: Colors.grey),
+        title: Text("Paramètre", style: TextStyle(color: Colors.grey, fontWeight: FontWeight.bold,),
         ),
         backgroundColor: Color.fromARGB(243, 73, 99, 129),
       ),
